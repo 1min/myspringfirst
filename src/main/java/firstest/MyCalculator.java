@@ -7,7 +7,7 @@ public class MyCalculator {
 	private int secondNum;
 	
 	//멤버변수의 setter가 꼭 있어야 xml에서 불러올수 있다!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	
+	//xml에서 부르기위해서는
 	public MyCalculator() {
 
 	}

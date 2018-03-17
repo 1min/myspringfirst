@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+<bean class="firstest.Calculator" id="calculator"/> <!-- calculator라는 인스턴스만듬 -->
+<bean class="firstest.MyCalculator" id="myCalculator"> <!-- myCalculator라는 인스턴스만듬 -->
+<property name="calculator" >
+<ref bean="calculator"/> <!-- 멤버중에 calculator를 얻음 --> <!-- myCalculator안의 멤버클래스가 3번째줄의 인스턴스를 참조함 즉 Calulator calulator에 =myCalculator.calculator -->
+</property>
+<property name="firstNum" value="10"/> <!-- 멤버의 firstNum=10 -->
+<property name="secondNum" value="2"/> <!-- 멤버의 secondNum=2 -->
+</bean>
+</beans>

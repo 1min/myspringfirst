@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="pencil" class="forth.Pencil6BWithEraser"><!-- class를 셋중어느것이든 작동한 Pencil인터페이스를 상속받았기 때문에 -->
+</bean>
+</beans>

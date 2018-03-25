@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="student" class="DIlifecycle.Student">
+<constructor-arg value="홍길순"/> <!-- 생성자 매개변수 순서대로 -->
+<constructor-arg value="30"/>
+</bean>
+
+</beans>

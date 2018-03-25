@@ -10,6 +10,11 @@
 		<config>src/main/resources/applicationCTX2.xml</config>
 		<config>src/main/resources/applicationCTX3.xml</config>
 		<config>src/main/resources/applicationCTX4.xml</config>
+		<config>src/main/resources/applicationCTXLEC6.xml</config>
+		<config>src/main/resources/applicationCTXLEC6_1.xml</config>
+		<config>src/main/resources/lifecycleEx.xml</config>
+		<config>src/main/resources/lifecycleEx2.xml</config>
+		<config>src/main/resources/singletonEx.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

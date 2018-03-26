@@ -22,13 +22,11 @@ public class Student implements InitializingBean,DisposableBean {
 		return age;
 	}
 
-	@Override
 	public void destroy() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("destroy()");
 	}
 
-	@Override
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("afterPropertiesSet()");

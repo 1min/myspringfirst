@@ -3,6 +3,7 @@ package forth;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+
 public class MainClass {
 
 	public static void main(String[] args) {

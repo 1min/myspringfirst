@@ -5,14 +5,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-<context:property-placeholder location="classpath:admin.properties,classpath:sub_admin.properties"/> 
+<context:property-placeholder location="classpath:admin.properties,classpath:sub_admin.properties"/> <!-- 외부파일을 받아옴,받아와서 프로퍼티만 다뽑아서 필드 이름만으로 사용가능 -->
 
 <bean id ="adminConnection2" class="javalec.outter2.AdminConnection2">
-<property name="adminId" value="${admin.id}"/>
-<property name="adminPw" value="${admin.pw}"/>
-<property name="sub_adminId" value="${sub_admin.id}"/>
+<property name="adminId" value="${admin.id}"/><!-- 외부파일의 요소를 받아와서 값으로 넣음 -->
+<property name="adminPw" value="${admin.pw}"/><!-- 외부파일의 요소를 받아와서 값으로 넣음 -->
+<property name="sub_adminId" value="${sub_admin.id}"/> <!-- 외부파일의 요소를 받아와서 값으로 넣음 -->
 <property name="sub_adminPw">
-<value>${sub_admin.pw}</value>
+<value>${sub_admin.pw}</value><!-- 외부파일의 요소를 받아와서 값으로 넣음 -->
 </property>
 </bean>
 

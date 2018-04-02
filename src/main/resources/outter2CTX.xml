@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:property-placeholder location="classpath:admin.properties,classpath:sub_admin.properties"/> 
+
+<bean id ="adminConnection2" class="javalec.outter2.AdminConnection2">
+<property name="adminId" value="${admin.id}"/>
+<property name="adminPw" value="${admin.pw}"/>
+<property name="sub_adminId" value="${sub_admin.id}"/>
+<property name="sub_adminPw">
+<value>${sub_admin.pw}</value>
+</property>
+</bean>
+
+
+
+
+
+</beans>

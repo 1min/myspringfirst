@@ -16,6 +16,8 @@
 		<config>src/main/resources/lifecycleEx2.xml</config>
 		<config>src/main/resources/singletonEx.xml</config>
 		<config>src/main/resources/aopCTX.xml</config>
+		<config>src/main/resources/outterCTX.xml</config>
+		<config>src/main/resources/outter2CTX.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

@@ -9,8 +9,8 @@
 
 <aop:config> <!-- aop설정 -->
 <aop:aspect id ="logger" ref="logAop"> <!-- aspect의 아이디는 logger고 LogAop를참조 -->
-<aop:pointcut id ="publicM" expression="within(aopEx.*)"/> <!-- 핵심부분을 publicM이라하고 aopEx.*의 모든메소드에 적용함 -->
-<aop:around pointcut-ref="publicM" method="loggerAop"/> <!-- publicM포인트 컷ㅇ loggerAop라는 기능을 주겠다  around는 핵심기능이 실행되기전 공통기능이 한번 실행됨 그리고 핵심기능 실행후 또공통기능 실행됨-->
+<aop:pointcut id ="publicM" expression="within(aopEx.*)"/> <!-- 핵심부분을 publicM이라하고 aopEx.*의 모든메소드를 사용시에 적용함 메인도 포함-->
+<aop:around pointcut-ref="publicM" method="loggerAop"/> <!-- publicM포인트 컷 loggerAop라는 기능을 주겠다  around는 핵심기능이 실행되기전 공통기능이 한번 실행됨 그리고 핵심기능 실행후 또공통기능 실행됨-->
 </aop:aspect>
 </aop:config>
 

@@ -20,6 +20,7 @@
 		<config>src/main/resources/outter2CTX.xml</config>
 		<config>src/main/resources/applicationCTX_run.xml</config>
 		<config>src/main/resources/applicationCTX_dev.xml</config>
+		<config>src/main/resources/aop2CTX.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

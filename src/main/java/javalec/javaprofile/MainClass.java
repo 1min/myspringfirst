@@ -2,7 +2,7 @@ package javalec.javaprofile;
 
 import java.util.Scanner;
 
-import org.hibernate.id.CompositeNestedGeneratedValueGenerator.GenerationPlan;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javalec.outter4.ServerInfo;

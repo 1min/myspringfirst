@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+<aop:aspectj-autoproxy/>
+
+<bean class="aop2.LogAop" id="logAop"/>
+
+
+<bean class="aop2.Student" id="student">
+
+<property value="홍길동" name="name"/>
+
+<property value="10" name="age"/>
+
+<property value="3" name="gradeNum"/>
+
+<property value="5" name="classNum"/>
+
+</bean>
+
+
+<bean class="aop2.Worker" id="worker">
+
+<property value="홍길순" name="name"/>
+
+<property value="35" name="age"/>
+
+<property value="개발자" name="job"/>
+
+</bean>
+
+</beans>
